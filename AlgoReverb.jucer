@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="AX31TA" name="AlgoReverb" projectType="audioplug" pluginFormats="buildAU,buildVST3"
+              jucerFormatVersion="1">
+  <MAINGROUP id="i5kwE4" name="AlgoReverb">
+    <GROUP id="{DAEFA6C7-D126-744B-DC6D-A0CDE4B6573F}" name="Source">
+      <FILE id="GShGIx" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="xtxxKL" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="EV7X3I" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="wwtZ1c" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="fYeo9U" name="FractionalDelay.cpp" compile="1" resource="0"
+            file="Source/FractionalDelay.cpp"/>
+      <FILE id="YuYuni" name="FractionalDelay.hpp" compile="0" resource="0"
+            file="Source/FractionalDelay.hpp"/>
+      <FILE id="u0z1c2" name="FDN.cpp" compile="1" resource="0" file="Source/FDN.cpp"/>
+      <FILE id="gquhX0" name="FDN.hpp" compile="0" resource="0" file="Source/FDN.hpp"/>
+      <FILE id="nEjnHb" name="APF.cpp" compile="1" resource="0" file="Source/APF.cpp"/>
+      <FILE id="WtdkH2" name="APF.hpp" compile="0" resource="0" file="Source/APF.hpp"/>
+      <FILE id="yMTxFB" name="FBCF.cpp" compile="1" resource="0" file="Source/FBCF.cpp"/>
+      <FILE id="BO6Kdb" name="FBCF.hpp" compile="0" resource="0" file="Source/FBCF.hpp"/>
+      <FILE id="kzrEGd" name="Schroeder.cpp" compile="1" resource="0" file="Source/Schroeder.cpp"/>
+      <FILE id="caUuiQ" name="Schroeder.hpp" compile="0" resource="0" file="Source/Schroeder.hpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" osxArchitecture="64BitIntel"/>
+        <CONFIGURATION isDebug="0" name="Release" osxArchitecture="64BitIntel"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE-fork/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE-fork/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
